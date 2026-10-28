@@ -1,0 +1,34 @@
+{
+  "assets": ["Acoes_BR", "Acoes_Global", "Titulos"],
+  "frequency": "monthly",
+  "historical_returns": [
+    [0.025, 0.018, 0.004],
+    [-0.015, -0.010, 0.006],
+    [0.030, 0.021, 0.003],
+    [0.002, -0.005, 0.005],
+    [-0.021, 0.010, 0.007],
+    [0.017, 0.029, 0.002],
+    [0.010, -0.013, 0.005],
+    [-0.009, 0.016, 0.004]
+  ],
+  "benchmark_weights": [0.35, 0.35, 0.30],
+  "risk_aversion": 3.0,
+  "tau": 0.05,
+  "risk_free_rate": 0.004,
+  "views": [
+    {
+      "name": "Acoes globais acima de brasileiras",
+      "coefficients": {"Acoes_Global": 1, "Acoes_BR": -1},
+      "expected_return": 0.0002,
+      "return_type": "excess",
+      "confidence": 0.6
+    },
+    {
+      "name": "Retorno total de Titulos",
+      "coefficients": {"Titulos": 1},
+      "expected_return": 0.003965,
+      "return_type": "total",
+      "confidence": 0.4
+    }
+  ]
+}
